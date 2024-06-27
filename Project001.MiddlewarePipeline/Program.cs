@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 
-using Project._001.Middlewares;
+using Project001.MiddlewarePipeline.Middlewares;
 
-namespace Project._001;
+namespace Project001.MiddlewarePipeline;
 
 internal class Program
 {

@@ -1,4 +1,4 @@
-namespace Project._002.Models;
+namespace Project002.BasicCRUD.Models;
 
 public class ToDo
 {

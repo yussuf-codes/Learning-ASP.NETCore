@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 
-using Project._002.Models;
-using Project._002.Repositories.IRepositories;
+using Project002.BasicCRUD.Models;
+using Project002.BasicCRUD.Repositories.IRepositories;
 
-namespace Project._002.Repositories;
+namespace Project002.BasicCRUD.Repositories;
 
 public class InMemoryToDosRepository : IGenericRepository<ToDo>
 {

@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
 
-using Project._002.Models;
-using Project._002.Repositories.IRepositories;
+using Project002.BasicCRUD.Models;
+using Project002.BasicCRUD.Repositories.IRepositories;
 
-namespace Project._002.Controllers;
+namespace Project002.BasicCRUD.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]

@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Project._002.Repositories.IRepositories;
+namespace Project002.BasicCRUD.Repositories.IRepositories;
 
 public interface IGenericRepository<T>
 {

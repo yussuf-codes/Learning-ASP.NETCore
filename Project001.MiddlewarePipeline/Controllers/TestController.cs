@@ -1,7 +1,7 @@
 using System;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Project._001.Controllers;
+namespace Project001.MiddlewarePipeline.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]

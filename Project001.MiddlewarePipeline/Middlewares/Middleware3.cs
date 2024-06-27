@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 
 using Microsoft.AspNetCore.Http;
 
-namespace Project._001.Middlewares;
+namespace Project001.MiddlewarePipeline.Middlewares;
 
 internal class Middleware3
 {

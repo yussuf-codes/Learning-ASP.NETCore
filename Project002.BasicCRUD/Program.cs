@@ -1,11 +1,11 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 
-using Project._002.Models;
-using Project._002.Repositories;
-using Project._002.Repositories.IRepositories;
+using Project002.BasicCRUD.Models;
+using Project002.BasicCRUD.Repositories;
+using Project002.BasicCRUD.Repositories.IRepositories;
 
-namespace Project._002;
+namespace Project002.BasicCRUD;
 
 public class Program
 {

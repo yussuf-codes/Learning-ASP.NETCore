@@ -11,13 +11,20 @@ public class Program
 {
     public static void Main()
     {
+        // Dependency injection inversion of control container
         WebApplicationBuilder builder = WebApplication.CreateBuilder();
 
-        builder.Services.AddControllers();
-        builder.Services.AddSingleton<IGenericRepository<ToDo>, InMemoryToDosRepository>();
+        {
+            // Scans the assembly for controller implementations with [ApiController] attribute
+            builder.Services.AddControllers();
+
+            // Creates a single instance that is used across the application lifetime
+            builder.Services.AddSingleton<IGenericRepository<ToDo>, InMemoryToDosRepository>();
+        }
 
         WebApplication app = builder.Build();
 
+        // Routing to controller actions & Model binding
         app.MapControllers();
         app.Run();
     }

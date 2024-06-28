@@ -1,7 +1,9 @@
 using System;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Project001.MiddlewarePipeline.Controllers;
+using Project003.ActionFilters.Filters;
+
+namespace Project003.ActionFilters.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
@@ -9,6 +11,7 @@ namespace Project001.MiddlewarePipeline.Controllers;
 public class TestController : ControllerBase
 {
     [HttpGet]
+    [ServiceFilter(typeof(AttributeFilter))]
     public void Get()
     {
         Console.WriteLine("\nInside the controller\n");

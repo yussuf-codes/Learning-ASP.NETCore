@@ -11,6 +11,7 @@ internal class Program
     {
         // Dependency injection inversion of control container
         WebApplicationBuilder builder = WebApplication.CreateBuilder();
+
         {
             // Scans the assembly for controller implementations with [ApiController] attribute
             builder.Services.AddControllers();
@@ -18,6 +19,7 @@ internal class Program
 
         // Middleware Pipeline
         WebApplication app = builder.Build();
+
         {
             app.UseMiddleware<Middleware1>();
             app.UseMiddleware<Middleware2>();
